@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MN4V6NWL');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo NF Suplementos | Janeiro 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --dark: #0A0A0A;
+            --gray-dark: #1A1A1A;
+            --gray: #2A2A2A;
+            --white: #FFFFFF;
+            --text-muted: #888888;
+            --whatsapp: #25D366;
+            --whatsapp-hover: #20BD5A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--black);
+            color: var(--white);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 50% 0%, rgba(255,255,255,0.03) 0%, transparent 50%),
+                var(--black);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* Header com Logo */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 16px;
+            filter: drop-shadow(0 10px 30px rgba(255,255,255,0.1));
+        }
+
+        .brand-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .location {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .headline {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            background: var(--white);
+            color: var(--black);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-top {
+            display: flex;
+            justify-content: center;
+            margin: 25px 0;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            background: var(--whatsapp);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .whatsapp-btn:hover {
+            background: var(--whatsapp-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+
+        /* Catalog Section */
+        .catalog-section {
+            margin: 30px 0;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+        }
+
+        .catalog-wrapper {
+            background: var(--gray-dark);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--gray);
+        }
+
+        .catalog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            background: var(--dark);
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .catalog-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .catalog-title svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--white);
+        }
+
+        .fullscreen-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: var(--gray);
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .fullscreen-btn:hover {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+
+        .fullscreen-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .catalog-embed {
+            width: 100%;
+            height: 65vh;
+            min-height: 450px;
+            border: none;
+            background: var(--dark);
+        }
+
+        /* CTA Section Bottom */
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+            animation: fadeInUp 0.8s ease-out 0.5s backwards;
+        }
+
+        .cta-text {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .cta-text strong {
+            color: var(--white);
+        }
+
+        .whatsapp-number {
+            display: block;
+            margin-top: 14px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .whatsapp-number span {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 40px;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px 14px;
+            background: var(--gray-dark);
+            border-radius: 12px;
+            border: 1px solid var(--gray);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            border-color: var(--white);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--white);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 14px;
+        }
+
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--black);
+        }
+
+        .feature h3 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .feature p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--gray);
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            animation: fadeInUp 0.8s ease-out 0.7s backwards;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .catalog-header {
+                flex-direction: column;
+                gap: 14px;
+            }
+            
+            .catalog-embed {
+                height: 55vh;
+                min-height: 380px;
+            }
+
+            .whatsapp-btn {
+                padding: 14px 28px;
+                font-size: 0.9rem;
+            }
+
+            .brand-name {
+                font-size: 1.4rem;
+                letter-spacing: 4px;
+            }
+
+            .headline {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN4V6NWL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="bg-pattern"></div>
+
+    <div class="container">
+        <header class="header">
+            <!-- TROQUE "logo.png" PELO NOME DO SEU ARQUIVO DE LOGO -->
+            <img src="logo.png" class="logo" alt="NF Suplementos">
+            <h1 class="brand-name">NF Suplementos</h1>
+            <p class="location">Votuporanga</p>
+            <h2 class="headline">Catálogo de Produtos</h2>
+            <span class="badge">📦 Atualizado Janeiro 2026</span>
+        </header>
+
+        <!-- WhatsApp Button Top -->
+        <div class="whatsapp-top">
+            <a href="https://wa.me/5517997587526?text=Olá!%20Vi%20o%20catálogo%20e%20gostaria%20de%20fazer%20um%20pedido" target="_blank" class="whatsapp-btn">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Faça seu Pedido
+            </a>
+        </div>
+
+        <section class="catalog-section">
+            <div class="catalog-wrapper">
+                <div class="catalog-header">
+                    <span class="catalog-title">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        Catálogo NF Suplementos
+                    </span>
+                    <a href="https://drive.google.com/file/d/1Mg2QcVm3On5DKhICgDNz3dpGsTPKZQu2/view" target="_blank" class="fullscreen-btn">
+                        <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                        Tela cheia
+                    </a>
+                </div>
+                <iframe 
+                    class="catalog-embed" 
+                    src="https://drive.google.com/file/d/1Mg2QcVm3On5DKhICgDNz3dpGsTPKZQu2/preview"
+                    allow="autoplay"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <p class="cta-text">Encontrou o que precisa? <strong>Fale conosco!</strong></p>
+            
+            <a href="https://wa.me/5517997587526?text=Olá!%20Vi%20o%20catálogo%20e%20gostaria%20de%20fazer%20um%20pedido" target="_blank" class="whatsapp-btn">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Faça seu Pedido
+            </a>
+            
+            <p class="whatsapp-number">ou ligue: <span>(17) 99758-7526</span></p>
+        </section>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <h3>Produtos Originais</h3>
+                <p>100% autênticos</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+                </div>
+                <h3>Entrega Rápida</h3>
+                <p>Votuporanga e região</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                </div>
+                <h3>Melhor Preço</h3>
+                <p>Condições especiais</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 NF Suplementos — Votuporanga/SP</p>
+        </footer>
+    </div>
+</body>
+</html>
